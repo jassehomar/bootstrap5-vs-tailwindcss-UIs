@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+
+    <title>Sign In Form - Tailwind CSS</title>
+    <style>
+      body,
+      input {
+        font-family: "Lato", sans-serif;
+      }
+      .form-width {
+        max-width: 630px;
+        width: 100%;
+      }
+      /* custom utilities */
+      /* .-mx-5 {
+        margin-left: -3rem !important;
+        margin-right: -3rem !important;
+      } */
+      @media (min-width: 576px) {
+        .-mx-sm-5 {
+          margin-left: -3rem !important;
+          margin-right: -3rem !important;
+        }
+
+        .form-control-sm-lg {
+          min-height: calc(1.5em + 1rem + 2px);
+          padding: 0.5rem 1rem;
+          font-size: 1.25rem;
+          border-radius: 0.3rem;
+        }
+
+        .btn-sm-lg {
+          padding: 0.5rem 1rem;
+          font-size: 1.25rem;
+          border-radius: 0.3rem;
+        }
+
+        .text-sm-4xl {
+          font-size: 2.2rem;
+        }
+      }
+
+      .text-semi-primary {
+        color: #fca4c2 !important;
+      }
+      .text-primary {
+        color: #f43c7c !important;
+      }
+
+      .bg-primary {
+        background-color: #f43c7c !important;
+      }
+
+      .border-primary {
+        border-color: #f43c7c !important;
+      }
+
+      .text-secondary {
+        color: #353d5a !important;
+      }
+
+      .bg-secondary {
+        background-color: #353d5a !important;
+      }
+
+      .border-secondary {
+        border-color: #353d5a !important;
+      }
+      .seconary-btn-shadow {
+        box-shadow: 0 0 0px 2px #353d5a;
+      }
+
+      .border-none {
+        border: none;
+      }
+
+      .text-normal {
+        font-size: 1.1rem !important;
+        line-height: 2rem;
+      }
+
+      .text-indigo-700 {
+        color: #4c51bf;
+      }
+
+      .text-teal-600 {
+        color: #319795;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-light px-4 d-flex min-vh-100 justify-content-start align-items-center flex-column py-4"
+  >
+    <div class="my-3 text-sm-4xl text-xl text-center">
+      <h1 class="">
+        <span class="text-sm-4xl">Day 1 - Bootstrap</span>
+      </h1>
+      <h2>
+        <span class="font-weight-bold text-indigo-700">Bootstrap 5</span> VS
+        <span class="font-weight-bold text-teal-600">Tailwind</span>
+        Components Design
+      </h2>
+    </div>
+    <div class="card mx-auto form-width px-sm-5">
+      <div class="card-body">
+        <h3
+          class="card-title pt-sm-5 pt-3 pb-sm-4 pb-2 text-lg font-weight-bold"
+        >
+          Sign-In
+        </h3>
+        <form>
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <label for="emailOrPhone" class="form-label font-weight-bold"
+                >Email or Phone Number</label
+              >
+              <span class="text-primary font-weight-bold">
+                Need Help?
+              </span>
+            </div>
+            <input
+              type="Enter your email address or phone number"
+              class="form-control form-control-sm-lg"
+              id="emailOrPhone"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label font-weight-bold"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control form-control-sm-lg"
+              id="password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-sm-lg btn-block text-white bg-primary border-primary text-normal font-weight-bold"
+          >
+            Continue
+          </button>
+          <div class="mt-3">
+            <p class="text-sm form-text">
+              By continuing, you agree to our
+              <strong>Conditions of Use</strong> and
+              <strong>Privacy Notice</strong>
+            </p>
+          </div>
+
+          <div class="mt-sm-5 mt-4">
+            <p class="mb-2 mt-0 font-weight-bold">New on our platform?</p>
+            <button
+              type="submit"
+              class="btn btn-primary btn-sm-lg btn-block text-secondary bg-white border-none seconary-btn-shadow text-normal font-weight-bold"
+            >
+              Create an Account
+            </button>
+          </div>
+        </form>
+      </div>
+      <div
+        class="card-footer bg-transparent -mx-sm-5 mt-sm-4 mt-2 py-sm-5 py-4"
+      >
+        <div
+          class="d-flex justify-content-sm-around justify-content-between px-sm-5 px-2"
+        >
+          <a
+            href="#"
+            class="text-decoration-none text-semi-primary font-weight-bold small"
+            >Conditions of Use</a
+          >
+          <a
+            href="#"
+            class="text-decoration-none text-semi-primary font-weight-bold small"
+            >Privacy Notice</a
+          >
+          <a
+            href="#"
+            class="text-decoration-none text-semi-primary font-weight-bold small"
+            >Help</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-3 mt-sm-4">
+      <p class="text-secondary text-center text-sm-left">
+        By <a href="#" class="text-decoration-none">Omar Jasseh</a> - Fullstack
+        Software Developer &amp; Code Instructor
+      </p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

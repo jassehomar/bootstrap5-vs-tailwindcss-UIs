@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      input {
+        font-family: "Lato", sans-serif;
+      }
+
+      .form-width {
+        max-width: 630px !important;
+      }
+      .text-pink-primary {
+        color: #f43c7c !important;
+      }
+
+      .border-pink-primary {
+        border-color: #f43c7c !important;
+      }
+
+      .bg-pink-primary {
+        background-color: #f43c7c !important;
+      }
+
+      .text-pink-secondary {
+        color: #fca4c2 !important;
+      }
+    </style>
+    <title>Sign In Form - Tailwind CSS</title>
+  </head>
+  <body
+    class="min-h-screen flex justify-start items-center sm:px-8 px-5 bg-gray-100 flex-col py-4"
+  >
+    <div class="sm:my-6 my-4 sm:text-4xl text-xl text-center">
+      <h1 class="sm:text-4xl text-2xl font-bold">
+        Day 1 - Tailwind
+      </h1>
+      <h2>
+        <span class="font-bold text-indigo-700">Bootstrap 5</span> VS
+        <span class="font-bold text-teal-600">Tailwind</span>
+        Components Design
+      </h2>
+    </div>
+    <div
+      class="mx-auto form-width w-full bg-white sm:px-16 px-6 border rounded-sm overlow-hidden"
+    >
+      <div class="sm:mt-12 mt-8">
+        <h3 class="font-bold text-gray-900 text-2xl sm:mb-6 mb-4 leading-loose">
+          Sign-In
+        </h3>
+        <form>
+          <div class="sm:mb-5 mb-3 flex flex-col">
+            <div class="flex items-center justify-between sm:mb-2 mb-1">
+              <label for="emailOrPhone" class="font-semibold text-gray-800"
+                >Email or Phone Number</label
+              >
+              <span
+                class="font-semibold text-pink-primary text-sm sm:text-base"
+              >
+                Need Help?
+              </span>
+            </div>
+            <input
+              type="Enter your email address or phone number"
+              class="sm:py-3 py-2 border border-gray-400 rounded"
+              id="emailOrPhone"
+            />
+          </div>
+          <div class="sm:mb-5 mb-3 flex flex-col">
+            <label
+              for="password"
+              class="font-semibold sm:mb-2 mb-1 text-gray-800"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="sm:py-3 py-2 border rounded border-gray-400"
+              id="password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="sm:py-3 py-2 block w-full bg-pink-primary text-white rounded-md mb-3 sm:leading-7 border border-pink-primary outline-none font-semibold"
+          >
+            Continue
+          </button>
+          <div>
+            <p class="text-gray-700 text-sm">
+              By continuing, you agree to our
+              <strong>Conditions of Use</strong> and
+              <strong>Privacy Notice</strong>
+            </p>
+          </div>
+
+          <div class="sm:mt-12 mt-8 sm:mb-10 mb-6">
+            <p class="font-semibold mb-2 text-gray-800">
+              New on our platform?
+            </p>
+            <button
+              type="submit"
+              class="block w-full border-2 border-gray-800 text-gray-800 rounded-md sm:py-3 py-2 border-black font-semibold sm:leading-7 outline-none"
+            >
+              Create an Account
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="border-t -sm:mx-16 -mx-6">
+        <div
+          class="sm:py-12 py-8 flex justify-between sm:justify-around items-center sm:mx-8 mx-6"
+        >
+          <a href="#" class="text-sm font-semibold text-pink-secondary"
+            >Conditions of Use</a
+          >
+          <a href="#" class="text-sm font-semibold text-pink-secondary"
+            >Privacy Notice</a
+          >
+          <a href="#" class="text-sm font-semibold text-pink-secondary">Help</a>
+        </div>
+      </div>
+    </div>
+    <footer class="sm:mt-10 mt-8 text-center">
+      <p class="text-gray-600 text-sm sm:text-base">
+        By <a href="#">Omar Jasseh</a> - Fullstack Software Developer &amp; Code
+        Instructor
+      </p>
+    </footer>
+  </body>
+</html>
